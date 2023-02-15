@@ -1,5 +1,6 @@
 :root {
   --color-primary-600: hsl(158, 36%, 37%);
+  --color-primary-500: hsl(158, 36%, 20%);
   --color-primary-200: hsl(30, 38%, 92%);
 
   --color-neutral-900: hsl(212, 21%, 14%);
@@ -153,4 +154,35 @@ svg {
   font-family: var(--font-family-secondary);
 }
 
-/* Utility classes */
+.container {
+  width: 300px;
+}
+
+.even-columns {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+}
+
+@media (min-width: 50em) {
+  .even-columns {
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+  }
+
+  .container {
+    width: 600px;
+    height: 400px;
+  }
+}
+
+/* General styling */
+
+.button {
+  border-radius: 0.5rem;
+  padding: 0.5em 1em;
+}
+
+.button:hover,
+button:focus-visible {
+  background-color: var(--color-primary-500);
+}
