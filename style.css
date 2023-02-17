@@ -107,7 +107,7 @@ body {
 }
 
 .image-section {
-  background-image: url("image-product-mobile.jpg");
+  background-image: url("./image-product-mobile.jpg");
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -170,7 +170,7 @@ button:active {
     height: 400px;
   }
   .image-section {
-    background-image: url("image-product-desktop.jpg");
+    background-image: url("./image-product-desktop.jpg");
     border-radius: 0.5rem 0 0 0.5rem;
   }
   .content-section {
